@@ -1,0 +1,6 @@
+print("""Faça um programa que leia uma frase pelo teclado e mostre quantas vezes aparece a letra “A”,\n em que posição ela aparece a primeira vez e em que posição ela aparece a última vez.""")
+frase = str(input('Digite uma frase: ')).upper().strip()
+print(len(frase))
+print('Aparece {} vezes a letra a'.format(frase.count('A')))
+print('Começa na posição {}'.format(frase.find('A')+1))
+print('Finaliza na posição {}'.format(frase.rfind('A')+1))
